@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-    <link rel="stylesheet" href="css/app.css">
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>Identity Example Site</title>
 </head>
@@ -20,7 +17,7 @@
                 <nav>
                     <div class="nav-wrapper blue darken-3">
                         <a href="/" class="brand-logo">
-                           
+
                         </a>
                         <a href="#" data-activates="mobile-demo" class="button-collapse">
                             <i class="material-icons">menu</i>
@@ -29,7 +26,7 @@
                             <li>
                                 <a href="/testauth">Test Auth</a>
                             </li>
-                            
+
                             </li>
                             <li>
                                     <a href="/testlogin/">Login</a>
@@ -42,38 +39,19 @@
                     </div>
                 </nav>
             </div>
-            <ul class="side-nav" id="mobile-demo">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/testauth">Test Auth</a>
-                </li>
-                
-                <li>
-                    <a href="/testlogin/">Login</a>
-                </li>
-                <li>
-                    <a href="/admin/">NetlifyCMS</a>
-                </li>
-                <li onClick={this.openIdentityWidget}>
-                    <a>Login</a>
-                </li>
-            </ul>
-
 
             <h1 class='bannerText1'> Netlify
                 <strong onClick={this.handleLogIn} class="bannerText1strong">IDENTITY</strong>
             </h1>
 
         </div>
-        
+
         <div class="container shiftUp">
             <div class="row">
                 <div class="col s12">
                 <div class="card-panel grey lighten-5 black-text ">
                     <main>
-                        <p>Welcome to my Netlify Identity sample site. There is a user account set up that you can use to gain access to the "Test Auth" page and the Netlify CMS admin page.</p> 
+                        <p>Welcome to my Netlify Identity sample site. There is a user account set up that you can use to gain access to the "Test Auth" page and the Netlify CMS admin page.</p>
                         <p>There are three available routes in addition to this home page:</p>
                         <ul>
                             <li>
@@ -82,11 +60,11 @@
                             <li>
                                 <strong>Login:</strong> This page has a 'Login' button. You can log in using the following credentials:
                                     <blockquote>
-                                        <strong>username:</strong> test@netlify.com <br />  
+                                        <strong>username:</strong> test@netlify.com <br />
                                         <strong>password:</strong> testing
                                     </blockquote>
                             </li>
-                            <li>    
+                            <li>
                                 <strong>NetlifyCMS:</strong> This link goes to <a href="/admin/">/admin/</a>, the usual path for Netlify CMS. Logging in will give you access to the CMS admin UI, but since this is just a login demo, it doesn't actually have any editing capabilities.
                             </li>
                         </ul>
@@ -100,20 +78,13 @@
                         </p>
                         <p>You can find all of the code for this site in the public repo at <a target="_blank" href="https://github.com/futuregerald/netlify_identity_example">
                             https://github.com/futuregerald/netlify_identity_example</a> </p>
-                        
+
                     </main>
                 </div>
                 </div>
             </div>
-           
+
     </div>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".button-collapse").sideNav();
-        })
-    </script>
 
 </body>
 
