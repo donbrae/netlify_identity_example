@@ -10,50 +10,25 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/testauth">Test Auth</a>
+            </li>
+            <li>
+                <a href="/testlogin/">Login</a>
+            </li>
+        </ul>
+    </nav>
 
-    <div class="App">
-        <div class="navDiv">
-            <div class="navbar-fixed">
-                <nav>
-                    <div class="nav-wrapper blue darken-3">
+    <h1>Identity Example Site - login page</h1>
 
-
-                        <ul class="right hide-on-med-and-down">
-                            <li>
-                                <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <a href="/testauth">Test Auth</a>
-                            </li>
-
-                            </li>
-                            <li>
-                                <a href="/testlogin/">Login</a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                </nav>
-            </div>
-
-            <h1 class='bannerText1'> Netlify
-                IDENTITY
-            </h1>
-
-        </div>
-
-        <div class="container shiftUp">
-            <div class="row">
-                <div class="col s12">
-                    <div class="card-panel grey lighten-5 black-text ">
-                        <main>
-                            <button class="btn waves-effect waves-light black" type="submit" name="action"
-                                data-netlify-identity-button></button>
-                        </main>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main>
+        <button data-netlify-identity-button></button>
+    </main>
 </body>
+
 </html>
